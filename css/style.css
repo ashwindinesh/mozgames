@@ -1,48 +1,48 @@
 @font-face {
-  src: local('FiraSansOTLight'),
-       local('FiraSansLight'),
-       local('Fira Sans OT Light'),
-       local('Fira Sans Light'),
-       url('../fonts/FiraSans/firasansot-light-webfont.woff') format('woff'),
-       url('../fonts/FiraSans/firasansot-light-webfont.ttf') format('truetype'),
-       url('../fonts/FiraSans/firasansot-light-webfont.svg#fira_sans_otlight') format('svg');
+  src: local("FiraSansOTLight"),
+       local("FiraSansLight"),
+       local("Fira Sans OT Light"),
+       local("Fira Sans Light"),
+       url(../fonts/FiraSans/firasansot-light-webfont.woff) format("woff"),
+       url(../fonts/FiraSans/firasansot-light-webfont.ttf) format("truetype"),
+       url(../fonts/FiraSans/firasansot-light-webfont.svg#fira_sans_otlight) format("svg");
   font-family: FiraSansWeb;
   font-weight: 300;
 }
 
 @font-face {
-  src: local('FiraSansOT'),
-       local('FiraSans'),
-       local('Fira Sans OT'),
-       local('Fira Sans'),
-       url('../fonts/FiraSans/firasansot-regular-webfont.woff') format('woff'),
-       url('../fonts/FiraSans/firasansot-regular-webfont.ttf') format('truetype'),
-       url('../fonts/FiraSans/firasansot-regular-webfont.svg#fira_sans_otregular') format('svg');
+  src: local("FiraSansOT"),
+       local("FiraSans"),
+       local("Fira Sans OT"),
+       local("Fira Sans"),
+       url(../fonts/FiraSans/firasansot-regular-webfont.woff) format("woff"),
+       url(../fonts/FiraSans/firasansot-regular-webfont.ttf) format("truetype"),
+       url(../fonts/FiraSans/firasansot-regular-webfont.svg#fira_sans_otregular) format("svg");
   font-family: FiraSansWeb;
   font-weight: 400;
 }
 
 @font-face {
-  src: local('FiraSansOTMedium'),
-       local('FiraSansMedium'),
-       local('Fira Sans OT Medium'),
-       local('Fira Sans Medium'),
-       url('../fonts/FiraSans/firasansot-medium-webfont.woff') format('woff'),
-       url('../fonts/FiraSans/firasansot-medium-webfont.ttf') format('truetype'),
-       url('../fonts/FiraSans/firasansot-medium-webfont.svg#fira_sans_otregular') format('svg');
+  src: local("FiraSansOTMedium"),
+       local("FiraSansMedium"),
+       local("Fira Sans OT Medium"),
+       local("Fira Sans Medium"),
+       url(../fonts/FiraSans/firasansot-medium-webfont.woff) format("woff"),
+       url(../fonts/FiraSans/firasansot-medium-webfont.ttf) format("truetype"),
+       url(../fonts/FiraSans/firasansot-medium-webfont.svg#fira_sans_otregular) format("svg");
   font-family: FiraSansWeb;
   font-weight: 500;
 }
 
 @font-face {
   /* Yes, the PostScript name contains a hyphen. Not a typo. */
-  src: local('FiraSansOT-Bold'),
-       local('FiraSans-Bold'),
-       local('Fira Sans OT Bold'),
-       local('Fira Sans Bold'),
-       url('../fonts/FiraSans/firasansot-bold-webfont.woff') format('woff'),
-       url('../fonts/FiraSans/firasansot-bold-webfont.ttf') format('truetype'),
-       url('../fonts/FiraSans/firasansot-bold-webfont.svg#fira_sans_otbold') format('svg');
+  src: local("FiraSansOT-Bold"),
+       local("FiraSans-Bold"),
+       local("Fira Sans OT Bold"),
+       local("Fira Sans Bold"),
+       url(../fonts/FiraSans/firasansot-bold-webfont.woff) format("woff"),
+       url(../fonts/FiraSans/firasansot-bold-webfont.ttf) format("truetype"),
+       url(../fonts/FiraSans/firasansot-bold-webfont.svg#fira_sans_otbold) format("svg");
   font-family: FiraSansWeb;
   font-weight: 600;
 }
@@ -56,7 +56,7 @@
 }
 
 body, html {
-  background: #333;
+  background: #fff;
   height: 100%;
   min-height: 100%;
 }
@@ -84,23 +84,19 @@ a:hover {
   flex: 1 0 62px;
 }
 
-main {
-  flex: auto;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 form {
   align-items: flex-start;
-  background: rgb(0,153,208);
+  /*background: rgb(16,146,210);*/
+  /*background: rgb(12,71,143);*/
+  background: rgb(85,86,90);
   border-top: 1px solid rgba(0,0,0,.1);
-  border-bottom: 1px solid rgba(0,0,0,.5);
+  /*border-bottom: 1px solid rgba(0,0,0,.5);*/
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 30px;
 }
 
 button {
+  border: 0;
   font-family: inherit;
 }
 
@@ -123,7 +119,7 @@ main h1 {
 
 .results ol {
   list-style: none;
-  padding: 0 15px 15px;
+  /*padding: 0 15px 15px;*/
 }
 
 .results li {
@@ -191,17 +187,6 @@ main h1 {
   width: 100%;
 }
 
-.icon {
-  background-repeat: no-repeat;
-  background-size: 48px;
-  bottom: -24px;
-  height: 48px;
-  position: absolute;
-  right: 10px;
-  width: 48px;
-  z-index: 10;
-}
-
 .game {
   display: block;
   position: relative;
@@ -235,29 +220,32 @@ main h1 {
 }
 
 .play {
-  background: rgba(46,204,113,.825);
-  border-radius: 2px;
-  border: 0;
-  box-shadow: 0 2px rgba(34,149,82,.825);
+  background: rgb(46,204,113);
+  /*border-radius: 2px;*/
+  bottom: 0;
+  /*box-shadow: 0 2px rgba(34,149,82,.825);*/
   color: #fff;
-  display: inline-block;
-  float: right;
+  display: block;
   font-size: 11px;
+  left: 0;
   line-height: 1;
-  margin-left: 5px;
   padding: 10px 0 8px;
   pointer-events: none;
+  position: absolute;
+  right: 10px;
   text-align: center;
   text-transform: uppercase;
   transition: .2s all ease-in;
   width: 80px;
 }
 
+/*
 .game:focus .play,
 .game:hover .play {
   background: #2ecc71;
   box-shadow: 0 2px #229552;
 }
+*/
 
 masthead {
   background: #333 url(../img/webgl-games.png) 100% 0 no-repeat;
@@ -271,6 +259,7 @@ masthead {
   padding: 0 20px;
 }
 
+/*
 @media (min-width: 600px) {
   .results ol {
     display: flex;
@@ -301,4 +290,128 @@ masthead {
   .results li {
     flex-basis: 20%;
   }
+}
+*/
+
+.group {
+  /*display: flex;*/
+  /*border: 10px solid #efefe4;*/
+  /*border: 5px solid #eee;*/
+  flex: 1;
+  /*margin: 15px;*/
+  height: 100%;
+  /*padding: 15px;*/
+}
+
+.group h2 {
+  margin: 30px 30px 15px;
+}
+
+.scrollable {
+  height: 80%;
+  overflow-y: auto;
+  /*display: flex;
+  flex: auto;
+  height: 50%;
+  overflow-x: hidden;
+  overflow-y: auto;*/
+
+  /*height: 50px;*/
+  /*background:red;*/
+  /*overflow-y: scroll;*/
+  padding: 0 30px 30px;
+}
+
+main {
+  display: flex;
+  flex: auto;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*h2 {
+  font-size: 20px;
+  font-weight: 500;
+}*/
+
+@font-face {
+  font-family: "Graphik Web Black";
+  src: url(../fonts/GraphikWeb/Graphik Web-Black.eot);
+  src: url(../fonts/GraphikWeb/Graphik Web-Black.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/GraphikWeb/Graphik Web-Black.ttf) format("truetype"),
+       url(../fonts/GraphikWeb/Graphik Web-Black.svg#GraphikTT) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: "Graphik Web Medium";
+  src: url(../fonts/GraphikWeb/Graphik Web-Medium.eot);
+  src: url(../fonts/GraphikWeb/Graphik Web-Medium.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/GraphikWeb/Graphik Web-Medium.ttf) format("truetype"),
+       url(../fonts/GraphikWeb/Graphik Web-Medium.svg#Graphik Web) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: "Graphik Web SemiBold";
+  src: url(../fonts/GraphikWeb/Graphik Web-Semibold.eot);
+  src: url(../fonts/GraphikWeb/Graphik Web-Semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/GraphikWeb/Graphik Web-Semibold.ttf) format("truetype"),url(../fonts/GraphikWeb/Graphik Web-Semibold.svg#GraphikTT) format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: "Graphik Web Super";
+  src: url(../fonts/GraphikWeb/Graphik-Super-Web.eot);
+  src: url(../fonts/GraphikWeb/Graphik-Super-Web.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/GraphikWeb/Graphik-Super-Web.ttf) format("truetype"),
+       url(../fonts/GraphikWeb/Graphik-Super-Web.svg#GraphikTT) format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: Entypo;
+  src: url(../fonts/entypo/entypo.eot);
+  src: url(../fonts/entypo/entypo.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/entypo/entypo.ttf) format("truetype"),
+       url(../fonts/entypo/entypo.svg#entypo) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+h2, h3, h4, h5, li, p {
+  font-family: "Graphik Web Medium", Helvetica, Arial;
+  font-size: 19px;
+  line-height: 26px;
+  margin: 0 0 15px;
+}
+
+/*h1 {
+  font-family: "Graphik Web Super", Helvetica, Arial;
+  font-size: 3em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}*/
+
+h2 {
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 5px solid #bbc;
+  color: #445;
+  font-family: "Graphik Web SemiBold", Helvetica, Arial;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  display: inline-block;
+  /*width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;*/
 }
